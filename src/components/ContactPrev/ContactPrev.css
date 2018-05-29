@@ -1,0 +1,13 @@
+li {
+    border: 1px solid black;
+    list-style: none;
+    height: 130px;
+    width: 350px;
+    display: flex;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    
+}
