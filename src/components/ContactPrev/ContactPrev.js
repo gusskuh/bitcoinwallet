@@ -5,21 +5,20 @@ import {Link} from 'react-router-dom'
 const ContactPrev = (props) => {
     const route = `/ContactDetails/${props.contact._id}`
     return (
-        <div>
-            <Link to={route}>
+        <Link to={route}>
+            <div>
                 <li>
                     <div>
                         <img src={props.contact.picture}/>  
                     </div>
                     <div>
-                        <p>{props.contact.name}</p>
-                        <p>{props.contact.email}</p>
-                        <p>{props.contact.phone}</p>
+                       <div>{props.contact.name} </div>
+                       <div>{props.contact.email}</div>
+                       <div>{props.contact.phone}</div>
                     </div>   
                 </li>
+                </div>
             </Link>
-        </div>
-        
     )
 }
 

@@ -1,4 +1,4 @@
-// import uniqid from 'uniqid'
+import uniqid from 'uniqid'
 
 const contacts = [
   {
@@ -99,8 +99,8 @@ function _updateContact(contact) {
 
 function _addContact(contact) {
   return new Promise((resolve, reject) => { 
-    // contact._id = uniqid()
-    contact.picture = '/img/img_avatar.png'      
+    contact._id = uniqid()
+    contact.picture = 'https://orig00.deviantart.net/28ad/f/2017/070/f/6/girl_transparent_by_artloverrarts-db1wzz2.png'      
     contacts.push(contact)
     resolve(contacts)
   })
